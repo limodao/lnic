@@ -1,0 +1,16 @@
+schema:             DNS-SCHEMA
+ref:                LNIC.domain
+dir-name:           dns
+key:                domain     required   single    primary schema
+key:                nserver    required   multiple  > [domain-name] [ip-addr]
+key:                descr      optional   single
+key:                mnt-by     required   multiple  lookup=LNIC.mntner
+key:                admin-c    optional   multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c     optional   multiple  lookup=LNIC.person,LNIC.role
+key:                org        optional   multiple  lookup=LNIC.organisation
+key:                country    optional   single
+key:                ds-rdata   optional   multiple
+key:                remarks    optional   multiple
+key:                source     required   single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

@@ -1,0 +1,7 @@
+role:               Your role
+nic-hdl:            EXAMPLE-LNIC
+abuse-mailbox:      you@example.net
+admin-c:            EXAMPLE-LNIC
+tech-c:             EXAMPLE-LNIC
+mnt-by:             EXAMPLE-MNT
+source:             LNIC

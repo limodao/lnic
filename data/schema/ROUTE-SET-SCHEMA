@@ -1,0 +1,14 @@
+schema:             ROUTE-SET-SCHEMA
+ref:                LNIC.route-set
+key:                route-set    required  single    primary schema
+key:                descr        optional  multiple
+key:                mnt-by       required  multiple  lookup=LNIC.mntner
+key:                members      deprecate multiple
+key:                mp-members   optional  multiple
+key:                mbrs-by-ref  optional  multiple  lookup=LNIC.mntner
+key:                admin-c      optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c       optional  multiple  lookup=LNIC.person,LNIC.role
+key:                remarks      optional  multiple
+key:                source       required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

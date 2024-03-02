@@ -1,0 +1,4 @@
+registry:           APNIC
+url:                whois://whois.apnic.net
+mnt-by:             LNIC-MNT
+source:             LNIC

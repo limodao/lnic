@@ -1,0 +1,8 @@
+domain:             example.lnic
+admin-c:            EXAMPLE-LNIC
+tech-c:             EXAMPLE-LNIC
+mnt-by:             EXAMPLE-MNT
+nserver:            jp-tyo1.example.lnic fd86:aa4f:8883::6
+nserver:            us-lax1.example.lnic fd86:aa4f:8883::1
+nserver:            cn-bj1.example.lnic fd86:aa4f:8883:1234::1
+source:             LNIC

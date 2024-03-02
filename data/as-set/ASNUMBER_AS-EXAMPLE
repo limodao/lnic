@@ -1,0 +1,6 @@
+as-set:             ASYOURASN:AS-EXAMPLE
+mbrs-by-ref:        YOUR-MNT
+admin-c:            ORG-YOUR-LNIC
+tech-c:             ORG-YOUR-LNIC
+mnt-by:             YOUR-MNT
+source:             LNIC

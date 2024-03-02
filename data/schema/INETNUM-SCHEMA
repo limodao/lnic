@@ -1,0 +1,24 @@
+schema:             INETNUM-SCHEMA
+ref:                LNIC.inetnum
+key:                inetnum     required  single    schema
+key:                cidr        required  single    primary
+key:                netname     required  single
+key:                nserver     optional  multiple  > [domain-name]
+key:                country     optional  multiple
+key:                descr       optional  single
+key:                status      optional  single    > {ALLOCATED|ASSIGNED} {PI|PA|}
+key:                policy      optional  single    > {open|closed|ask|reserved}
+key:                admin-c     optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c      optional  multiple  lookup=LNIC.person,LNIC.role
+key:                zone-c      optional  multiple  lookup=LNIC.person,LNIC.role
+key:                ds-rdata    optional  multiple
+key:                mnt-by      optional  multiple  lookup=LNIC.mntner
+key:                mnt-lower   optional  multiple  lookup=LNIC.mntner
+key:                mnt-routes  optional  multiple  lookup=LNIC.mntner
+key:                org         optional  single    lookup=LNIC.organisation
+key:                remarks     optional  multiple
+key:                source      required  single    lookup=LNIC.registry
+network-owner:      inet6num
+network-owner:      inetnum
+mnt-by:             LNIC-MNT
+source:             LNIC

@@ -1,0 +1,6 @@
+mntner:             EXAMPLE-MNT
+descr:              EXAMPLE maintainer
+admin-c:            EXAMPLE-LNIC
+tech-c:             EXAMPLE-LNIC
+mnt-by:             EXAMPLE-MNT
+source:             LNIC

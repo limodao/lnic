@@ -1,0 +1,17 @@
+schema:             TINC-KEY-SCHEMA
+ref:                LNIC.tinc-key
+key:                tinc-key      required  single    primary schema
+key:                tinc-host     required  single
+key:                tinc-file     required  single
+key:                descr         optional  single
+key:                remarks       optional  multiple
+key:                compression   optional  single
+key:                subnet        optional  multiple
+key:                tinc-address  optional  single
+key:                port          optional  single
+key:                admin-c       optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c        optional  multiple  lookup=LNIC.person,LNIC.role
+key:                mnt-by        required  multiple  lookup=LNIC.mntner
+key:                source        required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

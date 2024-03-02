@@ -1,0 +1,4 @@
+registry:           LACNIC
+url:                whois://whois.lacnic.net
+mnt-by:             LNIC-MNT
+source:             LNIC

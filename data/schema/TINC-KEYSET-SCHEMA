@@ -1,0 +1,12 @@
+schema:             TINC-KEYSET-SCHEMA
+ref:                LNIC.tinc-keyset
+key:                tinc-keyset  required  single    primary schema
+key:                descr        optional  single
+key:                remarks      optional  multiple
+key:                member       required  multiple  lookup=LNIC.tinc-key
+key:                admin-c      optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c       optional  multiple  lookup=LNIC.person,LNIC.role
+key:                mnt-by       required  multiple  lookup=LNIC.mntner
+key:                source       required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

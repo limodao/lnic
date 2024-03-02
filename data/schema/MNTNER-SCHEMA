@@ -1,0 +1,14 @@
+schema:             MNTNER-SCHEMA
+ref:                LNIC.mntner
+key:                mntner         required  single    primary schema
+key:                descr          optional  single
+key:                mnt-by         required  multiple  lookup=LNIC.mntner
+key:                admin-c        optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c         optional  multiple  lookup=LNIC.person,LNIC.role
+key:                auth           optional  multiple  > [method] [value]...
+key:                org            optional  multiple  lookup=LNIC.organisation
+key:                abuse-mailbox  optional  single
+key:                remarks        optional  multiple
+key:                source         required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

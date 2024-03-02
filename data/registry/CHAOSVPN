@@ -1,0 +1,4 @@
+registry:           CHAOSVPN
+url:                https://wiki.hamburg.ccc.de/ChaosVPN:IPRanges
+mnt-by:             LNIC-MNT
+source:             LNIC

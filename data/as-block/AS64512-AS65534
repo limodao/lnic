@@ -1,0 +1,5 @@
+as-block:           AS64512-AS65534
+descr:              Private ASN block
+mnt-by:             LNIC-MNT
+policy:             closed
+source:             LNIC

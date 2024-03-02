@@ -1,0 +1,12 @@
+schema:             AS-BLOCK-SCHEMA
+ref:                LNIC.as-block
+key:                as-block   required  single    primary schema
+key:                descr      optional  single
+key:                policy     required  single    > {open|ask|closed}
+key:                mnt-by     required  multiple  lookup=LNIC.mntner
+key:                admin-c    optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c     optional  multiple  lookup=LNIC.person,LNIC.role
+key:                remarks    optional  multiple
+key:                source     required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

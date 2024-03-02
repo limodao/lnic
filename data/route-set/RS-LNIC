@@ -1,0 +1,7 @@
+route-set:          RS-LNIC
+descr:              extended lnic networks
+remarks:            contains the native lnic network and ICANN assigned PI/PA space
+members:            RS-LNIC-NATIVE
+mp-members:         RS-LNIC-NATIVE
+mnt-by:             LNIC-MNT
+source:             LNIC

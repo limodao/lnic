@@ -1,0 +1,11 @@
+schema:             REGISTRY-SCHEMA
+ref:                LNIC.registry
+key:                registry   required  single    primary schema
+key:                url        required  multiple
+key:                descr      optional  multiple
+key:                mnt-by     required  multiple  lookup=LNIC.mntner
+key:                admin-c    optional  multiple  lookup=LNIC.person,LNIC.role
+key:                tech-c     optional  multiple  lookup=LNIC.person,LNIC.role
+key:                source     required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

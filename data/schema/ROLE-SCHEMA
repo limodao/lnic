@@ -1,0 +1,15 @@
+schema:             ROLE-SCHEMA
+ref:                LNIC.role
+key:                role            required   single    schema
+key:                nic-hdl         required   single    primary
+key:                mnt-by          required   multiple  lookup=LNIC.mntner
+key:                org             optional   multiple  lookup=LNIC.organisation
+key:                admin-c         optional   multiple  lookup=LNIC.person
+key:                tech-c          optional   multiple  lookup=LNIC.person
+key:                abuse-c         optional   multiple  lookup=LNIC.person
+key:                abuse-mailbox   optional   multiple
+key:                descr           optional   single
+key:                remarks         optional   multiple
+key:                source          required   single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

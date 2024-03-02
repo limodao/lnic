@@ -1,0 +1,6 @@
+as-block:           AS4242424000-AS4242426999
+descr:              Future LNIC use
+remarks:            This block is reserved for future LNIC use.
+mnt-by:             LNIC-MNT
+policy:             closed
+source:             LNIC

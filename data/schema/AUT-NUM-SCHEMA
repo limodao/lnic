@@ -1,0 +1,23 @@
+schema:             AUT-NUM-SCHEMA
+ref:                LNIC.aut-num
+key:                aut-num    required  single   primary schema
+key:                as-name    required  single
+key:                descr      optional  single
+key:                mnt-by     required  multiple lookup=LNIC.mntner
+key:                member-of  optional  multiple lookup=LNIC.as-set,LNIC.route-set
+key:                admin-c    optional  multiple lookup=LNIC.person,LNIC.role
+key:                tech-c     optional  multiple lookup=LNIC.person,LNIC.role
+key:                org        optional  single   lookup=LNIC.organisation
+key:                import     deprecate multiple
+key:                export     deprecate multiple
+key:                default    deprecate multiple
+key:                mp-peer    deprecate multiple
+key:                mp-group   deprecate multiple
+key:                mp-import  optional  multiple
+key:                mp-export  optional  multiple
+key:                mp-default optional  multiple
+key:                geo-loc    optional  multiple > [lat-c] [long-c] [name]
+key:                remarks    optional  multiple
+key:                source     required  single    lookup=LNIC.registry
+mnt-by:             LNIC-MNT
+source:             LNIC

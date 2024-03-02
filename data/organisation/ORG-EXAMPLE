@@ -1,0 +1,6 @@
+organisation:       ORG-EXAMPLE
+org-name:           Example Ltd.
+admin-c:            EXAMPLE-LNIC
+tech-c:             EXAMPLE-LNIC
+mnt-by:             EXAMPLE-MNT
+source:             LNIC
