@@ -1,0 +1,6 @@
+domain:             example.ln
+admin-c:            EXAMPLE-LNIC
+tech-c:             EXAMPLE-LNIC
+mnt-by:             EXAMPLE-MNT
+nserver:            example.lnic Endpoint IPv6 or IPv4
+source:             LNIC
